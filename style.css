@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div:not(.wrapper) {
+    position: absolute;
+}
+
+.tip {
+    position: absolute;
+    top:50px;
+    left: 50px;
+    padding: 20px;
+    font-size: 20px;
+    color: #3c3c3c;
+    animation: breath 0.7s infinite;
+    -webkit-animation: breath 0.7s infinite;
+}
+
+@keyframes breath{
+    0%{
+      box-shadow: 0 0 10px rgba(0,0,0,1)
+    }
+    100%{
+      box-shadow: 0 0 10px rgba(0,0,0,0.2)
+    }
+  }
